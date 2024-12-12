@@ -35,7 +35,7 @@ public class BankAccount implements Account {
 	@Override
 	public void withdraw(int amount) {
 		if (amount <= 0)
-			throw new IllegalArgumentException("Amount is negative");
+			throw new IllegalArgumentException("Amount is negative (char) 0x80");
 		
 		balance -= amount;
 	}
